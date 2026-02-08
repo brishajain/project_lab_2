@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class MaxContiguousSubsequenceSum {
 
-	static int count;
+	public static int count;
 
 	public static int compute1(int[] arr) {
 		int max = 0;
@@ -62,12 +62,13 @@ public class MaxContiguousSubsequenceSum {
 		Random rand = new Random();
 		int size = 1000;
 		int range = 10;
+		int total=count;
 		System.out.print(String.format("Generating a random array of size %d... ", size));
 		int[] arr = generateRandomArray(rand, size, range);
 		System.out.println("complete!");
 		System.out.println(String.format("arr = %s", Arrays.toString(arr)));
 		System.out.println(String.format("compute1(arr) = %d", compute1(arr)));
-		System.out.println(String.format("Total count:", count));
+		System.out.println(String.format("Total count:", total));
 		// System.out.println(String.format("compute2(arr) = %d", compute2(arr)));
 		// System.out.println(String.format("compute3(arr) = %d", compute3(arr)));
 	}

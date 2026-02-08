@@ -1,28 +1,72 @@
 package edu.grinnell.csc207.speedreader;
 
-/** TODO: implement this class and add a doc comment! */
+import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * A WordGenerator reads words from a file one at a time.
+ * It also keeps track of how many words and sentences
+ * have been produced so far.
+ */
 public class WordGenerator {
-    /** TODO: implement me and add an appropriate doc comment! */
-    public WordGenerator(String filename) {
+
+    private Scanner scanner;
+    private int wordCount;
+    private int sentenceCount;
+
+    /**
+     * Creates a WordGenerator that reads from the given file.
+     * 
+     * @param filename the name of the file to read
+     * @throws IOException if the file cannot be opened
+     */
+    public WordGenerator(String filename) throws IOException {
+        scanner = new Scanner(new File(filename));
+        wordCount = 0;
+        sentenceCount = 0;
     }
 
-    /** TODO: implement me and add an appropriate doc comment! */
+    /**
+     * Returns true if there are more words to read.
+     * 
+     * @return true if another word exists, false otherwise
+     */
     public boolean hasNext() {
-        return false;
+        return scanner.hasNext();
     }
 
-    /** TODO: implement me and add an appropriate doc comment! */
+    /**
+     * Returns the next word from the file.
+     * Increments the word count and updates the sentence count
+     * if the word ends with '.', '!', or '?'.
+     * 
+     * @return the next word
+     */
     public String next() {
-        return null;
+        String word = scanner.next();
+        wordCount++;
+        if (word.endsWith(".") || word.endsWith("!") || word.endsWith("?")) {
+            sentenceCount++;
+        }
+        return word;
     }
 
-    /** TODO: implement me and add an appropriate doc comment! */
+    /**
+     * Returns the number of words read so far.
+     * 
+     * @return the word count
+     */
     public int getWordCount() {
-        return -1;
+        return wordCount;
     }
 
-    /** TODO: implement me and add an appropriate doc comment! */
+    /**
+     * Returns the number of sentences read so far.
+     * 
+     * @return the sentence count
+     */
     public int getSentenceCount() {
-        return -1;
+        return sentenceCount;
     }
 }
