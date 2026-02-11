@@ -2,7 +2,10 @@
 
 ## About
 
-_(TODO: insert a description of the project here!)_
+ SpeedReader 
+ Displays text from a file one word at a time using RSVP.
+ The program reads words using WordGenerator and renders them to a DrawingPanel 
+ at a specified words-per-minute speed.
 
 ### Authors
 
@@ -14,6 +17,14 @@ _(TODO: insert a description of the project here!)_
 *   _(TODO: list your resources here!)_
 *   ...
 *   `DrawingPanel.java` adapted from _[Building Java Programs](https://www.buildingjavaprograms.com/) by Reges and Stepp.
+*    Excerpt 1: https://en.wikipedia.org/wiki/Null_Island
+*    Excerpt 2: https://en.wikipedia.org/wiki/Eiffel_Tower_replicas_and_derivatives 
+*    Excerpt 3: https://en.wikipedia.org/wiki/Gravity_hill
+*    Excerpt 4: https://en.wikipedia.org/wiki/Competitive_eating
+*    Excerpt 5:  https://en.wikipedia.org/wiki/Chipmunk
+*    Excerpt 6: https://en.wikipedia.org/wiki/Omnivore
+*    Excerpt 7: https://en.wikipedia.org/wiki/Animal_welfare
+*    Excerpt 8: https://en.wikipedia.org/wiki/Economic_vegetarianism 
 
 ## Write-up
 
@@ -105,3 +116,71 @@ Prints false because each input line is stored as a separate String in memory, e
 ### Empirical Complexity Analysis
 
 _(TODO: fill me in!)_
+
+
+### SpeedReader: Useability test
+
+## Questions
+Excerpt 1: Null Island
+What are the exact coordinates of Null Island?
+Why is Null Island not considered a real island?
+How is the name “Null Island” used in mapping software?
+Where did the term “Null Island” originally come from?
+What recurring issue in geographic information science does Null Island help address?
+
+Excerpt 2: Eiffel Tower Replicas
+In what year was the Eiffel Tower completed?
+Approximately how many similar towers has the Eiffel Tower inspired worldwide?
+Are most of the inspired towers exact replicas of the Eiffel Tower?
+What example is given of a tower inspired by the Eiffel Tower that is not listed as a close replica?
+Why are some inspired towers not included in lists of replicas?
+
+Excerpt 3: Gravity Hills
+What is another name for a gravity hill? (List one.)
+What illusion does a gravity hill create?
+What happens to a car left out of gear on a gravity hill?
+What is the most important factor contributing to the gravity hill illusion?
+Why do leaning objects such as trees contribute to the illusion?
+
+Excerpt 4: Competitive Eating
+What determines the winner in a competitive eating contest?
+How long are most competitive eating contests?
+In which three countries is competitive eating most popular?
+What type of prize may professional eating contests offer?
+Why does each contest typically use only one type of food?
+
+## Participant Info
+
+## Names: 
+Karla Lopez [A], Devansh Punjabi [B]
+
+## Emails: 
+[lopezkar], [punjabid]
+
+## Results
+〇 indicates that they answered it correctly
+
+Excerpt 1: 250 wpm
+A〇 B〇
+A〇 B
+A〇 B〇
+A〇 B〇
+
+Excerpt 2: 300 wpm
+A〇 B〇 
+A〇 B〇
+A B〇
+A〇 B〇
+
+Excerpt 3: 500 wpm
+A〇 B〇
+A B〇
+A B〇
+A〇 B
+
+## Conclusion
+Did your participants demonstrate that they were able to comprehend what they were reading with your speed reader?
+
+Based on the results, both participants were generally able to comprehend the material when using the speed reader, particularly at lower speeds. At 250 and 300 wpm, most questions were answered correctly by both participants, which indicates the strong comprehension. However, at 500 wpm, accuracy noticeably decreased, especially for Participant A, suggesting that very high speeds may begin to impact understanding. 
+Overall, the findings suggest that speed reading can maintain comprehension at moderate speeds, but comprehension may decline as the wpm rate increases significantly.
+
