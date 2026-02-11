@@ -1,6 +1,8 @@
 package edu.grinnell.csc207.speedreader;
 
 import java.io.File;
+import java.io.IOException;
+import java.awt.*;
 
 /** TODO: implement this class and add a doc comment! */
 public class SpeedReader {
@@ -9,7 +11,7 @@ public class SpeedReader {
      * TODO: implement me and add an appropriate doc comment!
      * !! Add the error checking for valid file name!!
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException{
         String fileName = args[0];
         // Path pathFile = Paths.get(args[0]);
         if (args.length != 6) {
@@ -44,7 +46,6 @@ public class SpeedReader {
             panel.clear();
             g.drawString(word, width/3, height/3);
             Thread.sleep(500);
-
         }
     }
 }
