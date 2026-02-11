@@ -115,8 +115,9 @@ Prints false because each input line is stored as a separate String in memory, e
 
 ### Empirical Complexity Analysis
 
-_(TODO: fill me in!)_
+How accurate is the operation counting method of measuring time complexity compared to the wall-clock method for understanding how the time complexity scales with the size of the input?
 
+Operation counting works well because it focuses on how many important steps the algorithm performs as the input gets bigger. In this lab, we counted array accesses. When the input size increased, the number of accesses for compute1 grew extremely fast, compute2 grew moderately fast, and compute3 grew slowly. This matched what we saw with wall-clock time: compute1 became very slow, compute2 slowed down but still ran, and compute3 stayed efficient.
 
 ### SpeedReader: Useability test
 
