@@ -1,5 +1,7 @@
 package edu.grinnell.csc207.speedreader;
 
+import java.io.File;
+
 /** TODO: implement this class and add a doc comment! */
 public class SpeedReader {
 
@@ -8,18 +10,19 @@ public class SpeedReader {
      * !! Add the error checking for valid file name!!
      */
     public static void main(String[] args) {
-        String fileRead = args[0];
+        String fileName = args[0];
         // Path pathFile = Paths.get(args[0]);
         if (args.length != 6) {
             System.out.println("The argument number is wrong.");
             System.exit(0);
         }
-        /*
-         * if (args[0] != fileExist.exists()) {
-         * System.out.println("The file does not exist.");
-         * System.exit(0);
-         * }
-         */
+        
+        File file = new File(fileName);
+         if (!file.exists()) {
+         System.out.println("The file does not exist.");
+         System.exit(0);
+         }
+         
         int width = Integer.parseInt(args[1]);
         int height = Integer.parseInt(args[2]);
         int fontSize = Integer.parseInt(args[3]);
@@ -30,12 +33,17 @@ public class SpeedReader {
             System.exit(0);
         }
 
-        WordGenerator generator = new WordGenerator(fileRead);
         DrawingPanel panel = new DrawingPanel(width, height);
+        Graphics g = panel.getGraphics();
+        Font f = new Font("Courier", Font.BOLD, fontSize);
+        g.setFont(f);
+        WordGenerator generator = new WordGenerator(fileName);
 
         while (generator.hasNext()) {
-
             String word = generator.next();
+            panel.clear();
+            g.drawString(word, width/3, height/3);
+            Thread.sleep(500);
 
         }
     }
