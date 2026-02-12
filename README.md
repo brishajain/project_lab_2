@@ -14,7 +14,7 @@
 
 ### Resources
 
-*   _(TODO: list your resources here!)_
+*   Professor Osera taught us how to use functions defined in another java files.
 *   ...
 *   `DrawingPanel.java` adapted from _[Building Java Programs](https://www.buildingjavaprograms.com/) by Reges and Stepp.
 *    Excerpt 1: https://en.wikipedia.org/wiki/Null_Island
