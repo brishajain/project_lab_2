@@ -58,5 +58,7 @@ public class SpeedReader {
             g.drawString(word, width / 2, height / 2);
             Thread.sleep(delay);
         }
+        System.out.println("Words: " + generator.getWordCount());
+        System.out.println("Sentences: " + generator.getSentenceCount());
     }
 }
